@@ -1,0 +1,32 @@
+1,3c1,3
+< search(query,language){
+<   return new Promise((resole,reject)=>{
+<     let searchString='${query} in ${language} site:stackoverflow.com'
+---
+> search(query, language) {
+>     return new Promise((resolve, reject) => {
+>       let searchString = `${query} in ${language} site:stackoverflow.com`
+5,10c5,6
+<     google(searchString,(err,res)=>{
+<       if(err){
+<         reject({
+<           reason: 'A search error has occured :'
+<         })
+<       }else if (res.links.length===0){
+---
+>       google(searchString, (err, res) => {
+>         if (err) {
+12c8,12
+<             reason: 'No results found:'
+---
+>             reason: 'A search error has occured :('
+>           })
+>         } else if (res.links.length === 0) {
+>           reject({
+>             reason: 'No results found :('
+18,19c18,19
+<   })
+< },
+---
+>     })
+>   },
