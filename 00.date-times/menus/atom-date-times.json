@@ -1,0 +1,31 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-date-times",
+        "command": "atom-date-times:getNowInLocaleStyle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "[todd] atom-date-times",
+          "submenu": [
+            {
+              "label": "getNowInLocale",
+              "command": "atom-date-times:getNowInLocaleStyle"
+            },
+            {
+              "label": "getNowInNYT",
+              "command": "atom-date-times:getNowInNYT"
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}
