@@ -1,0 +1,18 @@
+{
+  "name": "atom-date-times",
+  "main": "./lib/atom-date-times",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-date-times:getNowInLocaleStyle"
+  },
+  "repository": "https://github.com/atom/atom-date-times",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
